@@ -8,7 +8,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["anice_nano_v2"]'
+      board: '["nice_nano_v2"]'
       shield: '["sofle_left","sofle_right"]'
       alphas: '["qwertz"]'
       nav: '["vi"]'
