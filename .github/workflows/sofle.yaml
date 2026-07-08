@@ -1,0 +1,15 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Example corne nice_nano display'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["adafruit_feather_nrf52840"]'
+      shield: '["sofle_left","sofle_right"]'
+      alphas: '["qwertz"]'
+      nav: '["vi"]'
+      clipboard: '["mac"]'
